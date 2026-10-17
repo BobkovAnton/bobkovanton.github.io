@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ru" class="ready styles-ready">
+<head>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#F3F3F3" id="meta-theme-color">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+    
+<link rel="preload" href="./static/fonts/Onest-Variable.ttf" as="font" type="font/ttf" crossorigin fetchpriority="high">
+<style>
+  @font-face {
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: fallback;
+    src: url("./static/fonts/Onest-Variable.ttf") format('truetype');
+    unicode-range: U+0000-024F, U+0400-052F, U+2000-206F, U+20A0-20CF;
+  }
+  :root {
+    --font-primary: 'Onest', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-primary-strict: 'Onest', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-primary-fallback: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-secondary: 'Onest', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-17: 17px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-28: 28px;
+    --fs-32: 32px;
+    --fs-40: 40px;
+    --lh-12: 1.50;
+    --lh-14: 1.48;
+    --lh-16: 1.42;
+    --lh-17: 1.43;
+    --lh-18: 1.40;
+    --lh-20: 1.35;
+    --lh-24: 1.30;
+    --lh-28: 1.25;
+    --lh-32: 1.22;
+    --lh-40: 1.18;
+    --ls-12: -0.03em;
+    --ls-14: -0.015em;
+    --ls-16: -0.02em;
+    --ls-17: -0.01em;
+    --ls-18: -0.015em;
+    --ls-20: -0.020em;
+    --ls-24: -0.025em;
+    --ls-28: -0.030em;
+    --ls-32: -0.035em;
+    --ls-40: -0.030em;
+  }
+  html, body {
+    font-family: var(--font-primary);
+    font-synthesis: none;
+  }
+</style>
+
+<script>
+  (function () {
+    var html = document.documentElement;
+    var prefersDarkMode = false;
+    try {
+      prefersDarkMode = !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    } catch (e) {}
+
+    var savedTheme = null;
+    try {
+      savedTheme = localStorage.getItem('theme');
+    } catch (e) {}
+
+    var isDarkTheme = savedTheme === 'dark' || (savedTheme === null && prefersDarkMode);
+    var bg = isDarkTheme ? '#141414' : '#F3F3F3';
+
+    if (isDarkTheme) {
+      html.classList.add('dark-theme');
+      html.classList.add('dark-init');
+    } else {
+      html.classList.remove('dark-theme');
+      html.classList.remove('dark-init');
+    }
+
+    html.style.backgroundColor = bg;
+
+    var meta =
+      document.getElementById('meta-theme-color') ||
+      document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', bg);
+  })();
+</script>
+<style>
+  html:not(.styles-ready) body {
+    opacity: 0 !important;
+    visibility: hidden;
+  }
+</style>
+<noscript><style>html:not(.styles-ready) body { opacity: 1 !important; visibility: visible !important; }</style></noscript>
+
+  <link rel="preload" href="./static/gen/styles.min.css?v=onest-1" as="style">
+  <link rel="stylesheet" href="./static/gen/styles.min.css?v=onest-1">
+  <noscript><link rel="stylesheet" href="./static/gen/styles.min.css?v=onest-1"></noscript>
+
+    <meta name="robots" content="noindex, nofollow">
+    <title>Anton Bobkov — Product Designer | CV</title>
+    <meta name="description" content="Резюме: Антон Бобков — Product Designer, Middle, Россия, г Москва.">
+    
+    <meta property="og:title" content="Антон Бобков — Product Designer">
+    <meta property="og:description" content="Middle · Полная занятость · Гибрид, Удалённо · Россия, г Москва">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./uploads/resume_6b3e2cfc-4970-48d8-9ab3-8be8e2f91a41_13763_1786972703.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Антон Бобков — Product Designer">
+    <meta name="twitter:description" content="Middle · Полная занятость · Гибрид, Удалённо · Россия, г Москва">
+    <meta name="twitter:image" content="./uploads/resume_6b3e2cfc-4970-48d8-9ab3-8be8e2f91a41_13763_1786972703.webp">
+    <link rel="stylesheet" href="./static/css/resume_public.css?v=certificates-1">
+    
+    <script src="./static/js/resume/config.js"></script>
+    <script src="./static/js/resume/formatters.js"></script>
+    <script src="./static/js/resume/achievementsUtils.js"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/avatar-32.png?v=2"><link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/avatar-16.png?v=2"><link rel="icon" type="image/x-icon" href="./static/favicon/avatar.ico?v=2"><link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/avatar-180.png?v=2"></head>
+
+
+
+<body class="">
+    <div class="bg-primary">
+        <main class="resume-public-page">
+            
+            <div class="resume-public-content">
+                
+                
+                    
+                    
+                        
+                    
+                
+                    
+                    
+                        
+                    
+                
+                    
+                    
+                        
+                    
+                
+                    
+                    
+                        
+                    
+                
+                    
+                    
+                        
+                    
+                
+                    
+                    
+                        
+                    
+                
+                    
+                    
+                        
+                    
+                
+                    
+                    
+                        
+                    
+                
+
+                <section class="resume-public-card resume-public-header-card">
+                    <div class="resume-public-header">
+                        <div class="resume-public-photo">
+                            
+                                <img src="./uploads/resume_6b3e2cfc-4970-48d8-9ab3-8be8e2f91a41_13763_1786972703.webp" alt="Антон Бобков">
+                            
+                        </div>
+                        <div class="resume-public-header-text">
+                            <div class="resume-public-name">Антон Бобков</div>
+                            <div class="resume-public-position-row">
+                                <div class="resume-public-position">
+                                    
+                                        Product Designer
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                                <div class="resume-public-meta">
+                                    
+                                        Middle
+                                    
+                                    
+                                         · 
+                                        Полная занятость
+                                    
+                                    
+                                         · 
+                                        Гибрид, Удалённо
+                                    
+                                </div>
+                            
+                            
+                                <div class="resume-public-contacts-block">
+<div class="resume-public-contacts-title">Посмотреть</div>
+<div class="resume-public-inline-contacts">
+<a href="https://www.figma.com/design/gCDQVSVcXk0HXrjmliNtSb/Bobkov-Anton--product-designer?node-id=515-46&amp;t=LN23V0wDwkkiUsAF-1" class="resume-public-contact-link resume-public-portfolio-link" target="_blank" rel="noopener"><svg class="resume-link-logo resume-link-logo-figma" width="16" height="16" viewBox="0 3 18 27" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 30A4.5 4.5 0 0 0 9 25.5V21H4.5a4.5 4.5 0 0 0 0 9Z" fill="#0ACF83"/><path d="M0 16.5A4.5 4.5 0 0 1 4.5 12H9v9H4.5A4.5 4.5 0 0 1 0 16.5Z" fill="#A259FF"/><path d="M0 7.5A4.5 4.5 0 0 1 4.5 3H9v9H4.5A4.5 4.5 0 0 1 0 7.5Z" fill="#F24E1E"/><path d="M9 3h4.5a4.5 4.5 0 0 1 0 9H9V3Z" fill="#FF7262"/><circle cx="13.5" cy="16.5" r="4.5" fill="#1ABCFE"/></svg><span class="resume-link-label">Product cases</span></a>
+<span class="resume-public-dot">·</span>
+<a href="https://www.figma.com/file/gCDQVSVcXk0HXrjmliNtSb/PORTFOLIO-BOBKOV-ANTON?node-id=0%3A1&amp;t=zsyO3ey9Ql7KkYHr-1" class="resume-public-contact-link resume-public-portfolio-link" target="_blank" rel="noopener"><svg class="resume-link-logo resume-link-logo-figma" width="16" height="16" viewBox="0 3 18 27" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 30A4.5 4.5 0 0 0 9 25.5V21H4.5a4.5 4.5 0 0 0 0 9Z" fill="#0ACF83"/><path d="M0 16.5A4.5 4.5 0 0 1 4.5 12H9v9H4.5A4.5 4.5 0 0 1 0 16.5Z" fill="#A259FF"/><path d="M0 7.5A4.5 4.5 0 0 1 4.5 3H9v9H4.5A4.5 4.5 0 0 1 0 7.5Z" fill="#F24E1E"/><path d="M9 3h4.5a4.5 4.5 0 0 1 0 9H9V3Z" fill="#FF7262"/><circle cx="13.5" cy="16.5" r="4.5" fill="#1ABCFE"/></svg><span class="resume-link-label">Other projects</span></a>
+<span class="resume-public-dot">·</span>
+<a href="https://www.figma.com/proto/gCDQVSVcXk0HXrjmliNtSb/Bobkov-Anton--product-designer?node-id=634-49&amp;viewport=256%2C356%2C0.22&amp;t=ZVSzCuAG7o8sZGMb-8&amp;scaling=contain&amp;content-scaling=fixed&amp;starting-point-node-id=634%3A49&amp;page-id=634%3A46&amp;hide-ui=1" class="resume-public-contact-link resume-public-portfolio-link" target="_blank" rel="noopener"><svg class="resume-link-logo resume-link-logo-figma" width="16" height="16" viewBox="0 3 18 27" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 30A4.5 4.5 0 0 0 9 25.5V21H4.5a4.5 4.5 0 0 0 0 9Z" fill="#0ACF83"/><path d="M0 16.5A4.5 4.5 0 0 1 4.5 12H9v9H4.5A4.5 4.5 0 0 1 0 16.5Z" fill="#A259FF"/><path d="M0 7.5A4.5 4.5 0 0 1 4.5 3H9v9H4.5A4.5 4.5 0 0 1 0 7.5Z" fill="#F24E1E"/><path d="M9 3h4.5a4.5 4.5 0 0 1 0 9H9V3Z" fill="#FF7262"/><circle cx="13.5" cy="16.5" r="4.5" fill="#1ABCFE"/></svg><span class="resume-link-label">Presentation (about me)</span></a>
+<span class="resume-public-dot">·</span>
+<a href="https://dprofile.ru/bobkovanton" class="resume-public-contact-link resume-public-portfolio-link" target="_blank" rel="noopener"><img class="resume-link-logo resume-link-logo-dprofile" width="16" height="16" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAYFBMVEUQEBAAAAD4+Pj////8/PzFxcUNDQ2JiYmQkJCNjY3b29vMzMwICAh0dHRXV1eXl5dnZ2dhYWFAQEBJSUnp6eny8vIiIiKnp6dRUVGenp4pKSmAgIC+vr4bGxtcXFwXFxczUWbvAAABsUlEQVRYhe2W2ZaDIAyGG4MIWkXr1upM5/3fclKOs9SypMPl9L/yaPIZICQ5HF56KSIJVvKP7uTaaGOKhh7uXzPd20qglci7Hyc4q4ZDgFOJItsksOw3J9C6qS9xAhTi290ixGqd5LKa86W9xgigMNsJ1c0JutP8VksVAYBG+ue9MtTkJd9VAZe1P0bip50bqvyXqoFeFUSAWl31Gg6A4h/NBDstZrSrgI9uifrPAA8xHgFmS5CRxCL/2m0iocbY7m3+3o9xAu3fHDChVRRBAp3fGFqihNGeptdfIZrwHwwGVgErZrgEc+Q4kYlvFdCLTAyxTRrI6OQ2gpK+VTFARUal0wg6ukAijwFyuqXYuqzsJx7AGaeEWwHgATLhOGtokA9AR1WjHHwC4MgmSpEnAI50SwfoZwCOZEzexORjtEnKTSSnFbT8VO7clyHxMlE75F7n3lcQKBlxCheUhUz8fSW1pKUX1fSynt5Y0ltbvLmyCKNZ9u192to7ixAYMJgE74jDJviGLD5h3Y95/Pg3Qn8/aHraYYgAXf416lYtcz7eI6ApjNENd7x+VOK4/9I/0idQ1xGlIeeQSAAAAABJRU5ErkJggg=="><span class="resume-link-label">Dprofile</span></a>
+
+</div>
+</div>
+<div class="resume-public-contacts-block">
+<div class="resume-public-contacts-title">Связаться</div>
+<div class="resume-public-inline-contacts">
+<a href="tel:79265430458" class="resume-public-contact-link">+7 926 543-04-58</a>
+<span class="resume-public-dot">·</span>
+<a href="mailto:bobkovanton93@gmail.com" class="resume-public-email-link" data-email="bobkovanton93@gmail.com">Email</a>
+<span class="resume-public-dot">·</span>
+<a href="https://t.me/mrbobstir" class="resume-public-contact-link" target="_blank" rel="noopener">Telegram</a>
+</div>
+</div>
+                            
+                            
+                                <div class="resume-public-contacts-block">
+                                    <div class="resume-public-contacts-title">Локация</div>
+                                    <div class="resume-public-location">
+                                        Россия, г Москва (возможна релокация)
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="resume-public-contacts-block">
+                                    <div class="resume-public-contacts-title">О себе</div>
+                                    <div class="resume-public-about">Более 4 лет занимаюсь исследованиями и проектированием интерфейсов веб-продуктов.
+Анализирую пользовательские сценарии, формулирую и валидирую продуктовые гипотезы, проектирую решения и проверяю их через прототипирование и пользовательские тестирования.
+Решаю бизнес-задачи через улучшение пользовательского опыта и ключевых метрик.
+Учитываю технические ограничения, работаю в связке с командой и довожу решения до реализации и анализа результатов</div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="resume-public-card">
+                    <div class="resume-public-section-title">👨‍💻 Опыт работы<span id="total-work-experience"></span></div>
+                    <div class="resume-public-list">
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2024-02-01" data-end-date="None" data-is-current="1">
+                                    2024-02-01 — по настоящее время
+                                </div>
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.etagi.com/" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">Etagi</a>
+                                        
+                                    </div>
+                                    
+                                        
+                                        
+                                        <div class="resume-public-list-subtitle">Product Designer<span class="resume-public-work-format"> · Удалённо</span><span class="resume-public-employment-type"> · Полная занятость</span><span class="resume-public-grade"> · Middle</span></div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-work-description"><p class="resume-public-work-intro">Junior+ → Middle по результатам performance review, декабрь 2024</p><div class="resume-public-work-section"><p class="resume-public-work-label">Моя роль:</p><ul class="resume-public-work-points"><li>• Проведение первичных исследований и анализ продуктовых данных;</li><li>• Формулирование и проверка гипотез, проектирование и тестирование пользовательских сценариев;</li><li>• Создание интерактивных прототипов для тестирования и демонстрации поведения интерфейса;</li><li>• Командная работа с аналитиками, разработчиками, тестировщиками, продакт-менеджерами и бизнес-стейкхолдерами;</li><li>• Сопровождение задач до запуска, дизайн-ревью в тестовом окружении и анализ результатов;</li><li>• Развитие дизайн-системы: компоненты, дизайн-токены и техническая документация;</li><li>• Онбординг, ревью дизайнерских задач и менторство</li></ul></div><div class="resume-public-work-section"><p class="resume-public-work-label">Результаты:</p><ul class="resume-public-work-points"><li>• Перепроектировал систему фильтрации на ключевых пользовательских сценариях, что привело к росту использования расширенного фильтра (до +99%) и увеличению конверсии в карточки объектов (до +4,8%);</li><li>• Спроектировал сценарий онлайн-торга в карточке объекта (предложение своей цены), сформировав новый канал лидогенерации: до 47,9% конверсии в обращение;</li><li>• Оптимизировал онлайн-подписание: снизил затраты на SMS и звонки за счёт внедрения альтернативных способов подтверждения через мессенджеры (чат-боты);</li><li>• Спроектировал калькулятор рассрочки и доработал ипотечные калькуляторы, увеличив количество заявок и сократив время заполнения анкеты;</li><li>• Спроектировал процесс сбора обратной связи по фильтрам, что позволило быстрее выявлять пользовательские проблемы и упрощать приоритизацию продуктовых доработок;</li><li>• Выстроил процесс взаимодействия с маркетингом и внедрили гайдлайны для медийных материалов, что повысило их консистентность и снизило нагрузку на продуктовых дизайнеров;</li><li>• Совместно с командой внедрили дизайн-токены, повысив консистентность интерфейсов и упростив поддержку и развитие дизайн-системы.</li></ul></div></div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-04-01" data-end-date="2024-02-01" data-is-current="0">
+                                    2023-04-01 — 2024-02-01
+                                </div>
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <span class="resume-public-list-company">DI-PRoject</span>
+                                        
+                                    </div>
+                                    
+                                        
+                                        
+                                        <div class="resume-public-list-subtitle">UX/UI Designer<span class="resume-public-location-meta"> · Россия, г Москва</span><span class="resume-public-work-format"> · Офис</span><span class="resume-public-employment-type"> · Полная занятость</span><span class="resume-public-grade"> · Middle</span></div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-work-description"><div class="resume-public-work-section"><p class="resume-public-work-label">Моя роль:</p><ul class="resume-public-work-points"><li>• Создание адаптивных дизайн-макетов для сайтов;</li><li>• Выявление целей, задач, пожеланий и болей бизнеса по веб-продуктам;</li><li>• Предложение наилучших решений бизнес-задач и аргументирование их;</li><li>• Работа в команде, взаимодействие с разработчиками, контент-менеджерами, дизайнерами.</li></ul></div></div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2021-03-01" data-end-date="2023-04-01" data-is-current="0">
+                                    2021-03-01 — 2023-04-01
+                                </div>
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <span class="resume-public-list-company">Фриланс</span>
+                                        
+                                    </div>
+                                    
+                                        
+                                        
+                                        <div class="resume-public-list-subtitle">UX/UI Designer<span class="resume-public-work-format"> · Удалённо</span><span class="resume-public-employment-type"> · Проектная работа</span></div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-work-description"><div class="resume-public-work-section"><p class="resume-public-work-label">Моя роль:</p><ul class="resume-public-work-points"><li>• Создание сайтов на Tilda, дизайн под разработку;</li><li>• Работа в команде с другими внештатными дизайнерами, иллюстраторами, разработчиками над совместными проектами на аутсорсе.</li></ul></div></div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                
+
+                
+                <section class="resume-public-card">
+                    <div class="resume-public-section-title">🧑‍🎨 Проекты</div>
+                    <div class="resume-public-list">
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="None" data-end-date="2024-10-01" data-is-current="0" data-duration-months="1" data-project-date="1"><div class="resume-public-duration">1 месяц</div><div class="resume-public-date-line">окт. 2024 г.</div></div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://darkrain.store/" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">Darkrain</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Разработка дизайна и обеспечение поддержки сайта для бренда ювелирных украшений.
+Заказчик обратился с проблемой, что пользователи испытывают сложности при оформлении заказа на сайте. Провёл пользовательские исследования, позволившие определить источник проблемы.
+На основе опросов и интервью сформулировал и проверил гипотезы, реализовал обновлённый дизайн, направленный на улучшение пользовательского опыта и упрощение процесса покупки</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2022-11-01" data-end-date="2022-12-01" data-is-current="0" data-duration-months="2" data-project-date="1"><div class="resume-public-duration">2 месяца</div><div class="resume-public-date-line">ноя. 2022 г. —</div><div class="resume-public-date-line"> дек. 2022 г.</div></div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://whipsy.ru/" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">WHIPSY</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Разработка дизайна сайта для московского салона красоты и косметологии.
+Провел анализ конкурентов, чтобы определить актуальные стилистические направления на рынке. Разработал адаптивный дизайн и подготовил UI-kit  с документацией и описанием анимаций</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="None" data-end-date="2023-11-01" data-is-current="0" data-duration-months="1" data-project-date="1"><div class="resume-public-duration">1 месяц</div><div class="resume-public-date-line">нояб. 2023 г.</div></div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.figma.com/design/gCDQVSVcXk0HXrjmliNtSb/Bobkov-Anton--product-designer?node-id=480-14151&amp;t=LN23V0wDwkkiUsAF-1" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">Горбачев  &amp; Партнеры</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Разработка дизайна сайта для московской коллегии адвокатов.
+Провел первичные исследования, определил требования заказчиков, выявил стоп-факторы и ожидания от будущего сайта.
+Изучил стилистические особенности юридической сферы, подготовил несколько дизайн-концептов и презентовал их. После согласования реализовал финальный адаптивный дизайн</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-11-01" data-end-date="2024-01-01" data-is-current="0" data-duration-months="3" data-project-date="1"><div class="resume-public-duration">3 месяца</div><div class="resume-public-date-line">ноя. 2023 г. —</div><div class="resume-public-date-line"> янв. 2024 г.</div></div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.mgtcontrol.ru" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">Магматэк</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Разработка дизайна сайта для компании, создающей приборы для исследования нефтедобывающих скважин.
+Провёл стилистический анализ прямых и косвенных конкурентов, определили визуальные ориентиры и разработал адаптивный дизайн. Подготовил UI-kit  с подробной документацией и описанием анимаций</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2025-05-01" data-end-date="2025-05-01" data-is-current="0" data-project-date="1">
+                                    2025-05-01 — 2025-05-01
+                                </div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://callzol.ru/" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">Адвокат  Золкин Е.Д.</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Разработка дизайна лендинга для московского адвоката.
+Провел первичные исследования, выявил требования и ожидания клиента, а также проанализировал визуальные стандарты в юридической сфере.
+Создал адаптивный дизайн и текстовый контент, отражающий задачи и ценности специалиста. 
+Сайт реализован на платформе Tilda</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2025-02-01" data-end-date="2025-05-01" data-is-current="0" data-project-date="1">
+                                    2025-02-01 — 2025-05-01
+                                </div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.figma.com/design/gCDQVSVcXk0HXrjmliNtSb/Bobkov-Anton--product-designer?node-id=480-4009&amp;t=LN23V0wDwkkiUsAF-1" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">QR-меню  для Smartofood</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Дизайн цифрового QR-меню для Smartofood — B2B-SaaS-продукта для ресторанного бизнеса.
+Исследовал рынок и пользовательские сценарии рестораторов и гостей, сформировал и приоритизировал функциональные требования по итерациям.
+Спроектировал информационную архитектуру, low- и high-fidelity прототипы, провёл коридорные тесты.
+Разработал дизайн-систему с документацией и рекомендациями по использованию медиа-контента</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-12-01" data-end-date="2024-02-01" data-is-current="0" data-project-date="1">
+                                    2023-12-01 — 2024-02-01
+                                </div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.ayax.ru/" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">АЯКС</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Разработка дизайна и обеспечение поддержки сайта для агентства недвижимости в Краснодаре в сотрудничестве с их маркетинговой командой.
+Провёл функциональный и стилистический анализ конкурентов, чтобы определить актуальные требования к интерфейсу. Создал интерактивный прототип, провел юзабилити-тестирование и доработал интерфейс на основе полученных данных.
+Реализовал адаптивный дизайн и подготовил дизайн-систему с документацией и описанием анимаций для поддержки и масштабирования продукта</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-06-01" data-end-date="2023-06-01" data-is-current="0" data-project-date="1">
+                                    2023-06-01 — 2023-06-01
+                                </div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.figma.com/design/gCDQVSVcXk0HXrjmliNtSb/Bobkov-Anton--product-designer?node-id=480-9995&amp;t=LN23V0wDwkkiUsAF-1" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">Etyut.io</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Дизайн лендинга стартапа, разрабатывающего социальную сеть на базе блокчейна и ИИ.
+Провёл стилистический анализ конкурентов, выбрали актуальное визуальное направление, после чего реализовал адаптивный дизайн, поддерживающий ценностное предложение стартапа</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-04-01" data-end-date="2023-04-01" data-is-current="0" data-project-date="1">
+                                    2023-04-01 — 2023-04-01
+                                </div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://rob-roy.ru" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">ROB ROY</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Разработка дизайна лендинга для сети уличной еды Rob-Roy в Волгограде.
+Провёл первичные исследования, определил требования и ожидания заказчика, стоп-факторы.
+Изучил визуальные и стилистические паттерны сайтов в сфере street food, подготовил текстовый контент и презентовал дизайн-концепт. 
+После согласования реализовал финальный адаптивный дизайн на платформе Tilda</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-03-01" data-end-date="2023-03-01" data-is-current="0" data-project-date="1">
+                                    2023-03-01 — 2023-03-01
+                                </div>
+
+                                <div class="resume-public-list-main">
+                                    
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://lobasevent.ru/" target="_blank" rel="noopener noreferrer" class="resume-public-list-company resume-public-contact-link">Lobas Event</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">UX/UI Designer</div>
+                                    
+                                    
+                                        
+                                            <div class="resume-public-list-description resume-public-achievement-desc resume-public-project-description">Разработка дизайна лендинга для сервиса выездного бара премиум-класса Lobas Event.
+Провёл первичные исследования, сформировал требования заказчика, выявил ожидания и ограничения.
+Проанализировал визуальные стандарты премиального сегмента, разработал и презентовал дизайн-концепт.
+После согласования реализовал финальный адаптивный дизайн на платформе Tilda</div>
+                                        
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                </section>
+                
+
+                
+                <section class="resume-public-card"><div class="resume-public-section-title">🛠 Навыки</div><div class="resume-public-skills-layout"><div class="resume-public-skills-row"><div class="resume-public-skills-label">Компетенции</div><div class="resume-public-skills resume-public-skills-chips"><span class="resume-public-skill-chip">ux-исследования</span><span class="resume-public-skill-chip">анализ пользовательского поведения</span><span class="resume-public-skill-chip">cjm</span><span class="resume-public-skill-chip">проектирование пользовательских сценариев</span><span class="resume-public-skill-chip">user flow</span><span class="resume-public-skill-chip">проектирование пользовательских интерфейсов</span><span class="resume-public-skill-chip">web design</span><span class="resume-public-skill-chip">адаптивный дизайн</span><span class="resume-public-skill-chip">прототипирование</span><span class="resume-public-skill-chip">вайбкодинг</span><span class="resume-public-skill-chip">юзабилити-тестирование</span><span class="resume-public-skill-chip">коридорные исследования</span><span class="resume-public-skill-chip">проверка продуктовых гипотез</span><span class="resume-public-skill-chip">a/b тесты</span><span class="resume-public-skill-chip">продуктовые метрики</span><span class="resume-public-skill-chip">дизайн-системы</span><span class="resume-public-skill-chip">дизайн-токены</span><span class="resume-public-skill-chip">дизайн-ревью</span></div></div><div class="resume-public-skills-row"><div class="resume-public-skills-label">Инструменты</div><div class="resume-public-skills resume-public-skills-chips resume-tools-grid"><a class="resume-public-skill-chip resume-tool-link" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" aria-label="Figma"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 54 80" fill="none" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:24px;height:24px">
+<g clip-path="url(#tool-0-clip0_912_3)">
+<path d="M13.3333 80.0002C20.6933 80.0002 26.6667 74.0268 26.6667 66.6668V53.3335H13.3333C5.97333 53.3335 0 59.3068 0 66.6668C0 74.0268 5.97333 80.0002 13.3333 80.0002Z" fill="#0ACF83" />
+<path d="M0 39.9998C0 32.6398 5.97333 26.6665 13.3333 26.6665H26.6667V53.3332H13.3333C5.97333 53.3332 0 47.3598 0 39.9998Z" fill="#A259FF" />
+<path d="M0 13.3333C0 5.97333 5.97333 0 13.3333 0H26.6667V26.6667H13.3333C5.97333 26.6667 0 20.6933 0 13.3333Z" fill="#F24E1E" />
+<path d="M26.6667 0H40.0001C47.3601 0 53.3334 5.97333 53.3334 13.3333C53.3334 20.6933 47.3601 26.6667 40.0001 26.6667H26.6667V0Z" fill="#FF7262" />
+<path d="M53.3334 39.9998C53.3334 47.3598 47.3601 53.3332 40.0001 53.3332C32.6401 53.3332 26.6667 47.3598 26.6667 39.9998C26.6667 32.6398 32.6401 26.6665 40.0001 26.6665C47.3601 26.6665 53.3334 32.6398 53.3334 39.9998Z" fill="#1ABCFE" />
+</g>
+<defs>
+<clipPath id="tool-0-clip0_912_3">
+<rect width="53.3333" height="80" fill="white" />
+</clipPath>
+</defs>
+</svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" aria-label="ChatGPT"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="101.436 101.436 408.129 408.129" fill="none" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:24px;height:24px">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M252.794 108.802C289.191 99.0484 326.265 110.305 351.148 135.135C385.113 126.072 422.85 134.862 449.492 161.505C476.136 188.149 484.925 225.888 475.862 259.85V259.854C500.696 284.735 511.95 321.81 502.198 358.207C492.447 394.602 464.161 421.084 430.215 430.217C421.083 464.162 394.603 492.448 358.206 502.199C321.812 511.951 284.734 500.693 259.852 475.864C225.887 484.927 188.15 476.137 161.507 449.495C134.864 422.851 126.073 385.111 135.136 351.149C110.304 326.266 99.0496 289.192 108.801 252.795C118.552 216.4 146.84 189.918 180.784 180.785C189.917 146.841 216.396 118.553 252.794 108.802ZM374.292 407.145C374.292 411.271 372.092 415.086 368.517 417.148L283.723 466.102C302.487 480.585 327.555 486.459 352.217 479.852C386.997 470.532 410.068 439.312 410.555 405.006V317.717C410.555 315.08 409.125 312.621 406.843 311.303L374.292 292.509V407.145ZM251.868 415.897C248.296 417.959 243.893 417.959 240.317 415.897L155.526 366.942C152.366 390.436 159.811 415.08 177.866 433.136H177.863C203.325 458.594 241.896 462.962 271.85 446.232L347.449 402.586C349.735 401.268 351.148 398.8 351.148 396.163V358.579L251.868 415.897ZM368.602 220.628C366.319 219.309 363.474 219.318 361.191 220.637L328.641 239.431L427.921 296.749C431.496 298.811 433.697 302.627 433.697 306.752V404.661C455.622 395.654 473.244 376.881 479.851 352.218C489.169 317.442 473.668 281.85 444.201 264.274L368.602 220.628ZM177.303 206.34C155.377 215.348 137.756 234.122 131.148 258.783C121.832 293.561 137.331 329.153 166.799 346.727L242.398 390.373C244.68 391.692 247.525 391.684 249.807 390.366L282.357 371.572L183.078 314.253C179.504 312.189 177.303 308.375 177.303 304.251V206.34ZM259.849 279.145V331.858L305.5 358.213L351.15 331.858V279.145L305.5 252.789L259.849 279.145ZM327.276 144.9C308.512 130.418 283.445 124.543 258.782 131.15C224.002 140.471 200.931 171.691 200.445 205.995V293.286C200.445 295.923 201.875 298.381 204.158 299.7L236.707 318.493V203.856C236.707 199.731 238.909 195.916 242.483 193.853L327.276 144.9ZM433.137 177.867C407.675 152.407 369.103 148.038 339.149 164.769L263.55 208.415C261.265 209.734 259.852 212.202 259.852 214.838V252.423L359.132 195.105C362.703 193.041 367.108 193.041 370.682 195.105L455.473 244.06C458.635 220.567 451.189 195.922 433.135 177.867H433.137Z" fill="currentColor" />
+</svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://chatgpt.com/codex/" target="_blank" rel="noopener noreferrer" aria-label="Codex"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" fill-rule="evenodd" height="23" viewBox="0 0 24 24" width="23" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:23px;height:23px"><path clip-rule="evenodd" d="M8.086.457a6.105 6.105 0 013.046-.415c1.333.153 2.521.72 3.564 1.7a.117.117 0 00.107.029c1.408-.346 2.762-.224 4.061.366l.063.03.154.076c1.357.703 2.33 1.77 2.918 3.198.278.679.418 1.388.421 2.126a5.655 5.655 0 01-.18 1.631.167.167 0 00.04.155 5.982 5.982 0 011.578 2.891c.385 1.901-.01 3.615-1.183 5.14l-.182.22a6.063 6.063 0 01-2.934 1.851.162.162 0 00-.108.102c-.255.736-.511 1.364-.987 1.992-1.199 1.582-2.962 2.462-4.948 2.451-1.583-.008-2.986-.587-4.21-1.736a.145.145 0 00-.14-.032c-.518.167-1.04.191-1.604.185a5.924 5.924 0 01-2.595-.622 6.058 6.058 0 01-2.146-1.781c-.203-.269-.404-.522-.551-.821a7.74 7.74 0 01-.495-1.283 6.11 6.11 0 01-.017-3.064.166.166 0 00.008-.074.115.115 0 00-.037-.064 5.958 5.958 0 01-1.38-2.202 5.196 5.196 0 01-.333-1.589 6.915 6.915 0 01.188-2.132c.45-1.484 1.309-2.648 2.577-3.493.282-.188.55-.334.802-.438.286-.12.573-.22.861-.304a.129.129 0 00.087-.087A6.016 6.016 0 015.635 2.31C6.315 1.464 7.132.846 8.086.457zm-.804 7.85a.848.848 0 00-1.473.842l1.694 2.965-1.688 2.848a.849.849 0 001.46.864l1.94-3.272a.849.849 0 00.007-.854l-1.94-3.393zm5.446 6.24a.849.849 0 000 1.695h4.848a.849.849 0 000-1.696h-4.848z" /></svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" aria-label="Perplexity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="8.625 3.65625 30.75 40.6875" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:24px;height:24px" fill="currentColor">
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 4.5v39M13.73 16.573v-9.99L24 16.573m0 14.5L13.73 41.417V27.01L24 16.573m0 0l10.27-9.99v9.99" />
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M13.73 31.396H9.44V16.573h29.12v14.823h-4.29" />
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 16.573L34.27 27.01v14.407L24 31.073" />
+</svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer" aria-label="DeepSeek"><svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px" viewBox="0 0 24 24" class="resume-tool-logo" width="24" height="24" aria-hidden="true" focusable="false"><path fill="#4D6BFE" d="M23.748 4.482c-.254-.124-.364.113-.512.234-.051.039-.094.09-.137.136-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.156-.708-.311-.955-.65-.172-.241-.219-.51-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.093.172.187.129.323-.082.28-.18.552-.266.833-.055.179-.137.217-.329.14a5.526 5.526 0 0 1-1.736-1.18c-.857-.828-1.631-1.742-2.597-2.458a11.365 11.365 0 0 0-.689-.471c-.985-.957.13-1.743.388-1.836.27-.098.093-.432-.779-.428-.872.004-1.67.295-2.687.684a3.055 3.055 0 0 1-.465.137 9.597 9.597 0 0 0-2.883-.102c-1.885.21-3.39 1.102-4.497 2.623C.082 8.606-.231 10.684.152 12.85c.403 2.284 1.569 4.175 3.36 5.653 1.858 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.133-.284 4.994-1.86.47.234.962.327 1.78.397.63.059 1.236-.03 1.705-.128.735-.156.684-.837.419-.961-2.155-1.004-1.682-.595-2.113-.926 1.096-1.296 2.746-2.642 3.392-7.003.05-.347.007-.565 0-.845-.004-.17.035-.237.23-.256a4.173 4.173 0 0 0 1.545-.475c1.396-.763 1.96-2.015 2.093-3.517.02-.23-.004-.467-.247-.588zM11.581 18c-2.089-1.642-3.102-2.183-3.52-2.16-.392.024-.321.471-.235.763.09.288.207.486.371.739.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.167-1.361-.802-2.5-1.86-3.301-3.307-.774-1.393-1.224-2.887-1.298-4.482-.02-.386.093-.522.477-.592a4.696 4.696 0 0 1 1.529-.039c2.132.312 3.946 1.265 5.468 2.774.868.86 1.525 1.887 2.202 2.891.72 1.066 1.494 2.082 2.48 2.914.348.292.625.514.891.677-.802.09-2.14.11-3.054-.614zm1-6.44a.306.306 0 0 1 .415-.287.302.302 0 0 1 .2.288.306.306 0 0 1-.31.307.303.303 0 0 1-.304-.308zm3.11 1.596c-.2.081-.399.151-.59.16a1.245 1.245 0 0 1-.798-.254c-.274-.23-.47-.358-.552-.758a1.73 1.73 0 0 1 .016-.588c.07-.327-.008-.537-.239-.727-.187-.156-.426-.199-.688-.199a.559.559 0 0 1-.254-.078.253.253 0 0 1-.114-.358c.028-.054.16-.186.192-.21.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.391.451.462.576.685.914.176.265.336.537.445.848.067.195-.019.354-.25.452z" /></svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://miro.com/" target="_blank" rel="noopener noreferrer" aria-label="Miro"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" version="1.1" preserveAspectRatio="xMidYMid" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:22px;height:22px">
+    <g>
+        <path d="M0,64 C0,28.65376 28.65376,0 64,0 L192,0 C227.3464,0 256,28.65376 256,64 L256,192 C256,227.3464 227.3464,256 192,256 L64,256 C28.65376,256 0,227.3464 0,192 L0,64 Z" fill="#FFDD33" />
+        <polygon fill="#000000" points="170.1952 48.8 146.956 48.8 166.3216 82.8256 123.7168 48.8 100.4784 48.8 121.7808 90.388 77.23904 48.8 54 48.8 77.23904 101.7368 54 207.6 77.23904 207.6 121.7808 94.1744 100.4784 207.6 123.7168 207.6 166.3216 86.612 146.956 207.6 170.1952 207.6 212.8 75.26344" />
+    </g>
+</svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://www.notion.com/" target="_blank" rel="noopener noreferrer" aria-label="Notion"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" preserveAspectRatio="xMidYMid" viewBox="0 0 256 268" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:22px;height:22px"><path fill="#FFF" d="M16.092 11.538 164.09.608c18.179-1.56 22.85-.508 34.28 7.801l47.243 33.282C253.406 47.414 256 48.975 256 55.207v182.527c0 11.439-4.155 18.205-18.696 19.24L65.44 267.378c-10.913.517-16.11-1.043-21.825-8.327L8.826 213.814C2.586 205.487 0 199.254 0 191.97V29.726c0-9.352 4.155-17.153 16.092-18.188Z" /><path d="M164.09.608 16.092 11.538C4.155 12.573 0 20.374 0 29.726v162.245c0 7.284 2.585 13.516 8.826 21.843l34.789 45.237c5.715 7.284 10.912 8.844 21.825 8.327l171.864-10.404c14.532-1.035 18.696-7.801 18.696-19.24V55.207c0-5.911-2.336-7.614-9.21-12.66l-1.185-.856L198.37 8.409C186.94.1 182.27-.952 164.09.608ZM69.327 52.22c-14.033.945-17.216 1.159-25.186-5.323L23.876 30.778c-2.06-2.086-1.026-4.69 4.163-5.207l142.274-10.395c11.947-1.043 18.17 3.12 22.842 6.758l24.401 17.68c1.043.525 3.638 3.637.517 3.637L71.146 52.095l-1.819.125Zm-16.36 183.954V81.222c0-6.767 2.077-9.887 8.3-10.413L230.02 60.93c5.724-.517 8.31 3.12 8.31 9.879v153.917c0 6.767-1.044 12.49-10.387 13.008l-161.487 9.361c-9.343.517-13.489-2.594-13.489-10.921ZM212.377 89.53c1.034 4.681 0 9.362-4.681 9.897l-7.783 1.542v114.404c-6.758 3.637-12.981 5.715-18.18 5.715-8.308 0-10.386-2.604-16.609-10.396l-50.898-80.079v77.476l16.1 3.646s0 9.362-12.989 9.362l-35.814 2.077c-1.043-2.086 0-7.284 3.63-8.318l9.351-2.595V109.823l-12.98-1.052c-1.044-4.68 1.55-11.439 8.826-11.965l38.426-2.585 52.958 81.113v-71.76l-13.498-1.552c-1.043-5.733 3.111-9.896 8.3-10.404l35.84-2.087Z" /></svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://www.jetbrains.com/youtrack/" target="_blank" rel="noopener noreferrer" aria-label="YouTrack"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 64 64" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:24px;height:24px">
+  <defs>
+    <linearGradient id="tool-6-a" x1="-.102411" x2="64.0532" y1="32.0002" y2="32.0002" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FB43FF" />
+      <stop offset=".97" stop-color="#FB406D" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#tool-6-a)" d="M1.30634 51.2446c-.09688-.0713-.12875-.2019-.07625-.31L8.86571 35.209.058214 24.6908c-.08875-.1056-.074375-.2637.031875-.3518L25.7788 2.93209C30.3495-.877908 36.967-.985408 41.6626 2.67147c4.6937 3.65687 6.1937 10.08813 3.5969 15.43623l-2.7994 5.7669c1.0919-.3663 2.1725-.6994 3.2412-.9988l12.6738-3.6406c.1381-.04.2819.045.3131.1856l5.3056 23.585c.0325.1457-.0662.2882-.215.3069-1.6818.2119-10.8575 1.53-22.2812 6.3294-12.9431 5.4362-21.4844 13.1625-22.6944 14.2925-.0894.0837-.2206.0869-.3187.0144L1.30634 51.2446Z" />
+  <path fill="#000" d="M52 12H12v40h40V12Z" />
+  <path fill="#fff" d="m21.4666 26.3709-5.4881-9.3787h3.1513l3.3981 5.9919.3969.8575.3968-.8682 3.3119-5.9812h3.0975l-5.4025 9.3575v5.6487h-2.8619v-5.6275Z" />
+  <path fill="#fff" d="M33 43.9984H17v3h16v-3Z" />
+  <path fill="#fff" d="M42.3248 16.9922H30.2879l-.0006 2.6369h4.5662v12.3693h2.9263V19.6291h4.545v-2.6369Z" />
+</svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://tilda.cc/" target="_blank" rel="noopener noreferrer" aria-label="Tilda"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 320 320" fill="none" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:24px;height:24px"><path d="M168.317 149.006V226.947H151.858V142.477L168.317 149.006Z" fill="currentColor" /><path d="M131.645 105.609C140.744 105.609 147.717 108.514 162.431 115.484C173.273 120.712 181.213 124.585 189.344 124.585C197.088 124.584 200.808 118.144 201.002 106.333H214.182C215.343 130.536 202.703 139.3 189.151 139.301C180.438 139.301 172.691 136.783 157.783 129.812C147.522 124.779 139.582 120.325 131.838 120.324C124.094 120.324 119.484 125.748 119.29 138.913H105.873C105.293 117.228 116.736 105.609 131.645 105.609Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M161.809 20.0114C238.295 20.9801 300 83.2841 300 160L299.989 161.809C299.02 238.295 236.716 300 160 300L158.191 299.989C82.3072 299.027 20.9725 237.693 20.0114 161.809L20 160C20 82.6804 82.6805 20.0004 160 20L161.809 20.0114ZM160 29.5202C87.9382 29.5206 29.5202 87.9381 29.5202 160C29.5202 232.062 87.9382 290.479 160 290.48C232.062 290.48 290.48 232.062 290.48 160C290.48 87.9379 232.062 29.5202 160 29.5202Z" fill="currentColor" /></svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer" aria-label="Adobe Photoshop"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 83 80" fill="none" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:22px;height:22px">
+<g clip-path="url(#tool-3-clip0_906_1855)">
+<path d="M67.5214 0H14.5299C6.50526 0 0 6.50526 0 14.5299V65.4701C0 73.4947 6.50526 80 14.5299 80H67.5214C75.546 80 82.0513 73.4947 82.0513 65.4701V14.5299C82.0513 6.50526 75.546 0 67.5214 0Z" fill="#001E36" />
+<path d="M18.4758 56.1007V20.9284C18.4758 20.6721 18.5859 20.5431 18.8061 20.5431C19.3926 20.5431 19.928 20.5345 20.7357 20.5156C21.5425 20.4975 22.414 20.4792 23.3502 20.4606C24.286 20.4424 25.2768 20.4241 26.3226 20.4055C27.3683 20.3874 28.4049 20.3783 29.4324 20.3779C32.2207 20.3779 34.5692 20.7265 36.4778 21.4238C38.1996 22.0062 39.7697 22.9651 41.074 24.2309C42.1797 25.3281 43.0341 26.6521 43.5784 28.1115C44.0933 29.5318 44.3542 31.0316 44.3491 32.5424C44.3491 35.4786 43.6702 37.9005 42.3125 39.808C40.9458 41.7235 39.0247 43.1739 36.8082 43.9638C34.4964 44.8264 31.9274 45.1189 29.1022 45.1189C28.2946 45.1189 27.7258 45.1098 27.3958 45.0914C27.0656 45.0733 26.5703 45.0641 25.9098 45.0639V56.0457C25.9194 56.113 25.9132 56.1816 25.8917 56.2461C25.8702 56.3106 25.834 56.3692 25.7859 56.4172C25.7378 56.4653 25.6792 56.5015 25.6147 56.523C25.5502 56.5445 25.4816 56.5507 25.4143 56.5411H18.8611C18.604 56.5411 18.4758 56.3948 18.4758 56.1007ZM25.9098 27.1482V38.62C26.3862 38.657 26.8265 38.6753 27.2307 38.675H29.0471C30.3836 38.6706 31.7113 38.4586 32.9828 38.0467C34.0732 37.7228 35.0476 37.0923 35.7899 36.2303C36.5054 35.3866 36.8632 34.2124 36.8633 32.7076C36.8923 31.6428 36.6153 30.5921 36.065 29.6802C35.4866 28.7983 34.6506 28.1161 33.6707 27.7262C32.3913 27.2289 31.0246 26.9949 29.6526 27.0382C28.7718 27.0382 27.9921 27.0473 27.3134 27.0656C26.6339 27.0846 26.1661 27.1121 25.9098 27.1482Z" fill="#31A8FF" />
+<path d="M65.6311 36.534C64.5967 36.0025 63.495 35.6137 62.3561 35.3781C61.1011 35.0902 59.8181 34.9425 58.5306 34.9377C57.8342 34.9189 57.1387 35.0023 56.4665 35.1855C56.0386 35.2807 55.6583 35.5245 55.3931 35.8735C55.2137 36.1526 55.1182 36.4774 55.118 36.8092C55.128 37.1311 55.2441 37.4407 55.4482 37.6899C55.7697 38.066 56.1626 38.3747 56.604 38.5981C57.3888 39.0207 58.1975 39.3975 59.0259 39.7265C60.8732 40.3449 62.6384 41.1858 64.2825 42.2309C65.4025 42.9378 66.3293 43.9119 66.9796 45.0656C67.5265 46.1581 67.8003 47.3669 67.7778 48.5884C67.8107 50.2013 67.3498 51.7858 66.4568 53.1294C65.5007 54.4933 64.1728 55.5537 62.6312 56.1842C60.961 56.9179 58.8969 57.2849 56.439 57.2851C54.8775 57.3009 53.3186 57.1533 51.7878 56.8448C50.5818 56.6236 49.4077 56.2539 48.2926 55.7439C48.1722 55.6818 48.0721 55.5867 48.0039 55.4697C47.9356 55.3527 47.9021 55.2187 47.9073 55.0834V49.1388C47.9007 49.0806 47.91 49.0217 47.9342 48.9683C47.9585 48.915 47.9968 48.8693 48.045 48.836C48.0923 48.8093 48.1466 48.7976 48.2006 48.8026C48.2547 48.8075 48.306 48.8288 48.3477 48.8636C49.6646 49.6401 51.0945 50.2065 52.5859 50.5424C53.9005 50.8719 55.2489 51.0473 56.604 51.0653C57.8881 51.0653 58.833 50.9001 59.4387 50.5699C59.7123 50.4447 59.9437 50.2429 60.1049 49.9889C60.2661 49.7349 60.3502 49.4396 60.347 49.1388C60.347 48.6623 60.0718 48.2037 59.5214 47.7627C58.971 47.3224 57.8518 46.7903 56.1637 46.1664C54.4354 45.5649 52.7967 44.7317 51.2924 43.6896C50.2165 42.9413 49.3305 41.9516 48.7054 40.7998C48.1641 39.7152 47.8904 38.5167 47.9073 37.3046C47.9042 35.8482 48.3043 34.4194 49.0632 33.1764C49.9284 31.8076 51.1709 30.718 52.641 30.039C54.2553 29.2322 56.2735 28.8286 58.6958 28.828C60.1143 28.8166 61.5315 28.9178 62.934 29.1307C63.9497 29.2596 64.9426 29.5281 65.8847 29.9289C65.9594 29.9503 66.0281 29.9888 66.0854 30.0413C66.1427 30.0939 66.1871 30.159 66.2149 30.2316C66.2521 30.366 66.2706 30.5049 66.27 30.6444V36.2037C66.2738 36.2684 66.2605 36.333 66.2316 36.3909C66.2026 36.4489 66.1589 36.4982 66.1049 36.534C66.0313 36.5706 65.9502 36.5897 65.868 36.5897C65.7858 36.5897 65.7047 36.5706 65.6311 36.534Z" fill="#31A8FF" />
+</g>
+<defs>
+<clipPath id="tool-3-clip0_906_1855">
+<rect width="82.0513" height="80" fill="white" />
+</clipPath>
+</defs>
+</svg></a><a class="resume-public-skill-chip resume-tool-link" href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noopener noreferrer" aria-label="Adobe Illustrator"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 83 80" fill="none" class="resume-tool-logo" aria-hidden="true" focusable="false" style="width:22px;height:22px">
+<g clip-path="url(#tool-4-clip0_906_1865)">
+<path d="M67.5214 0H14.5299C6.50526 0 0 6.50526 0 14.5299V65.4701C0 73.4947 6.50526 80 14.5299 80H67.5214C75.546 80 82.0513 73.4947 82.0513 65.4701V14.5299C82.0513 6.50526 75.546 0 67.5214 0Z" fill="#330000" />
+<path d="M39.7607 48.0096H27.0459L24.4589 56.0459C24.4237 56.1924 24.3384 56.3221 24.2178 56.4125C24.0972 56.503 23.9489 56.5485 23.7984 56.5413H17.3584C16.9911 56.5413 16.8627 56.3395 16.9731 55.9358L27.9815 24.2312C28.0917 23.901 28.2018 23.5249 28.3119 23.1028C28.4559 22.3684 28.5296 21.622 28.5321 20.8736C28.5246 20.8213 28.5294 20.7679 28.5461 20.7178C28.5629 20.6676 28.591 20.6221 28.6284 20.5847C28.6658 20.5473 28.7114 20.5191 28.7615 20.5024C28.8117 20.4856 28.865 20.4808 28.9174 20.4883H37.669C37.9255 20.4883 38.0722 20.58 38.1094 20.7635L50.6042 55.9908C50.7143 56.3581 50.6041 56.5416 50.2739 56.5413H43.1183C42.9954 56.5549 42.8717 56.5233 42.7704 56.4524C42.6692 56.3815 42.5971 56.2761 42.5679 56.156L39.7607 48.0096ZM29.0274 41.0743H37.7241C37.504 40.3407 37.2471 39.515 36.9536 38.5973C36.6594 37.6805 36.3476 36.6989 36.0179 35.6525C35.6876 34.6068 35.3572 33.561 35.027 32.5151C34.6968 31.4693 34.3941 30.4602 34.1189 29.4877C33.8436 28.5159 33.5959 27.6261 33.3759 26.8182H33.3208C33.0109 28.3048 32.6251 29.7745 32.1649 31.2216C31.6506 32.8729 31.1276 34.5609 30.5961 36.2855C30.0637 38.0108 29.5408 39.6071 29.0274 41.0743Z" fill="#FF9A00" />
+<path d="M58.0343 26.3229C57.4729 26.3455 56.9131 26.2493 56.3914 26.0406C55.8697 25.8319 55.398 25.5155 55.007 25.112C54.6171 24.691 54.3142 24.1971 54.1158 23.6587C53.9174 23.1202 53.8274 22.5479 53.851 21.9746C53.831 21.4069 53.9309 20.8414 54.1443 20.315C54.3577 19.7886 54.6798 19.3131 55.0894 18.9197C55.4951 18.5303 55.974 18.2252 56.4984 18.0221C57.0227 17.8189 57.5822 17.7218 58.1443 17.7363C59.4654 17.7363 60.5021 18.1307 61.2543 18.9197C61.634 19.3297 61.9291 19.8105 62.1227 20.3347C62.3163 20.8589 62.4046 21.4162 62.3826 21.9746C62.4056 22.5501 62.3127 23.1245 62.1094 23.6634C61.9061 24.2024 61.5966 24.695 61.1992 25.112C60.7839 25.5214 60.2882 25.8404 59.7435 26.0488C59.1988 26.2572 58.6169 26.3505 58.0343 26.3229ZM54.2362 55.9909V29.6805C54.2362 29.3503 54.3825 29.1851 54.6766 29.1851H61.4469C61.7403 29.1851 61.887 29.3502 61.8873 29.6805V55.9909C61.8873 56.3582 61.7405 56.5416 61.4469 56.5414H54.7317C54.4015 56.5414 54.2364 56.3579 54.2362 55.9909Z" fill="#FF9A00" />
+</g>
+<defs>
+<clipPath id="tool-4-clip0_906_1865">
+<rect width="82.0513" height="80" fill="white" />
+</clipPath>
+</defs>
+</svg></a></div></div><div class="resume-public-skills-row">
+<div class="resume-public-skills-label">Знание языков</div>
+<div class="resume-public-skills-languages">
+<div class="resume-public-language-line" data-level="Носитель">
+<span class="resume-public-language-name">Русский</span>
+<span class="resume-public-language-level">
+<span class="resume-public-language-code">Носитель</span>
+<span class="resume-public-language-desc"></span>
+</span>
+</div>
+<div class="resume-public-language-line" data-level="A2">
+<span class="resume-public-language-name">Английский</span>
+<span class="resume-public-language-level">
+<span class="resume-public-language-code">A2</span>
+<span class="resume-public-language-desc"></span>
+</span>
+</div>
+</div>
+</div></div></section>
+                
+
+                
+                <section class="resume-public-card">
+                    <div class="resume-public-section-title">🏆 Награды</div>
+                    <div class="resume-public-list">
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-04-01" data-end-date="" data-is-current="0" data-location="" data-no-duration="1">
+                                    2023-04-01
+                                    
+                                </div>
+                                <div class="resume-public-list-main">
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://dprofile.ru/case/11714/ask-phill" class="resume-public-list-company resume-public-contact-link" target="_blank" rel="noopener">Dprofile, награда в категории «Интерфейсы»</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-description">Universal Works.</div>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-02-01" data-end-date="" data-is-current="0" data-location="" data-no-duration="1">
+                                    2023-02-01
+                                    
+                                </div>
+                                <div class="resume-public-list-main">
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://dprofile.ru/case/11714/ask-phill" class="resume-public-list-company resume-public-contact-link" target="_blank" rel="noopener">Dprofile, награда в категории «Интерфейсы»</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-description">ASK PHILL</div>
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                </section>
+                
+
+                
+                <section class="resume-public-card">
+                    <div class="resume-public-section-title">📚 Курсы</div>
+                    <div class="resume-public-list">
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-04-01" data-end-date="" data-is-current="0" data-location="" data-no-duration="1">
+                                    2023-04-01
+                                    
+                                </div>
+                                <div class="resume-public-list-main">
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://tilda.school" class="resume-public-list-company resume-public-contact-link" target="_blank" rel="noopener">Website Designer PRO on Tilda</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-description">Про уровень создания сайтов на Tilda. 
+Глубокое погружение в дизайн, расширенные возможности Zero Block, пошаговая анимация и профессиональный подход к верстке сайтов на Tilda.
+Создание качественных уникальных сайтов с нуля со сложной анимацией, используя Zero Block</div>
+                                    <a class="resume-public-certificate-link" href="https://drive.google.com/file/d/18Zqk8XSLg4XmQClQV_LjXFEe8MEk7ASB/view?usp=sharing" target="_blank" rel="noopener noreferrer">Сертификат ↗</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2023-03-01" data-end-date="" data-is-current="0" data-location="" data-no-duration="1">
+                                    2023-03-01
+                                    
+                                </div>
+                                <div class="resume-public-list-main">
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.school.uprock.ru" class="resume-public-list-company resume-public-contact-link" target="_blank" rel="noopener">UX/UI Designer: Websites PRO</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-description">Создание интерактивных, удобных для пользователя интерфейсов. 
+Веб-дизайн. Сетки, композиции, быстрые концепции. Посадочные страницы, интернет-магазины, корпоративные сайты, новостные сайты, сайты студий, сайты-портфолио</div>
+                                    <a class="resume-public-certificate-link" href="https://drive.google.com/file/d/131I9qFw4nqiuxU1ZpJ2D3WUJVuoyc6jo/view?usp=share_link" target="_blank" rel="noopener noreferrer">Сертификат ↗</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2022-11-01" data-end-date="" data-is-current="0" data-location="" data-no-duration="1">
+                                    2022-11-01
+                                    
+                                </div>
+                                <div class="resume-public-list-main">
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://tilda.school" class="resume-public-list-company resume-public-contact-link" target="_blank" rel="noopener">Website Designer on Tilda</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-description">Многостраничные сайты, лендинги, интернет-магазины на Tilda. Zero Block, адаптивы, анимация, технические и SEO настройки сайта, конструктор email рассылок и т.д.</div>
+                                    <a class="resume-public-certificate-link" href="https://drive.google.com/file/d/1idK_XICbTSX5_4zuIuAafFfOt-yiFx4f/view?usp=sharing" target="_blank" rel="noopener noreferrer">Сертификат ↗</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2022-05-01" data-end-date="" data-is-current="0" data-location="" data-no-duration="1">
+                                    2022-05-01
+                                    
+                                </div>
+                                <div class="resume-public-list-main">
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.school.uprock.ru" class="resume-public-list-company resume-public-contact-link" target="_blank" rel="noopener">Complex grids and compositions. Web design</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-description">Продвинутые сетки и композиции в веб-дизайне</div>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="2022-01-01" data-end-date="" data-is-current="0" data-location="" data-no-duration="1">
+                                    2022-01-01
+                                    
+                                </div>
+                                <div class="resume-public-list-main">
+                                    <div class="resume-public-list-title">
+                                        
+                                            <a href="https://www.school.uprock.ru" class="resume-public-list-company resume-public-contact-link" target="_blank" rel="noopener">Mobile app design course. Deep learning in interface design</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="resume-public-list-description">Все этапы проектирования мобильных и веб-сервисов</div>
+                                    <a class="resume-public-certificate-link" href="https://drive.google.com/file/d/1KUASXmyDpQoGbzVFRuiTRMPyrSlpRVbk/view?usp=share_link" target="_blank" rel="noopener noreferrer">Сертификат ↗</a>
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                </section>
+<section class="resume-public-card">
+                    <div class="resume-public-section-title">📖 Образование</div>
+                    <div class="resume-public-list">
+                        
+                            <div class="resume-public-list-item">
+                                <div class="resume-public-list-dates" data-start-date="None" data-end-date="None" data-is-current="0" data-date-label="2016 г."><div class="resume-public-date-line">2016 г.</div></div>
+                                <div class="resume-public-list-main">
+                                    <div class="resume-public-list-title">
+                                        <span class="resume-public-list-company">Волгоградский государственный технический университет, Волгоград</span>
+                                    </div>
+                                    
+                                        <div class="resume-public-list-subtitle">
+                                            Высшее магистратура
+                                             · 
+                                            Оборудование и технология сварочного производства
+                                        </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                </section>
+                
+            </div>
+            
+        </main>
+
+        
+        <div class="resume-public-floating-wrapper">
+            <div class="resume-public-floating-actions">
+                
+                <button class="btn btn-gray resume-floating-link theme-toggle theme-switcher" aria-label="Сменить тему" title="Сменить тему" style="width:44px;height:44px;padding:0;display:flex;align-items:center;justify-content:center;" type="button">
+                    <svg class="icon-sun" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C12.1989 2 12.3897 2.07902 12.5303 2.21967C12.671 2.36032 12.75 2.55109 12.75 2.75V4.25C12.75 4.44891 12.671 4.63968 12.5303 4.78033C12.3897 4.92098 12.1989 5 12 5C11.8011 5 11.6103 4.92098 11.4697 4.78033C11.329 4.63968 11.25 4.44891 11.25 4.25V2.75C11.25 2.55109 11.329 2.36032 11.4697 2.21967C11.6103 2.07902 11.8011 2 12 2ZM12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17ZM12 15.5C11.5404 15.5 11.0852 15.4095 10.6606 15.2336C10.236 15.0577 9.85013 14.7999 9.52513 14.4749C9.20012 14.1499 8.94231 13.764 8.76642 13.3394C8.59053 12.9148 8.5 12.4596 8.5 12C8.5 11.5404 8.59053 11.0852 8.76642 10.6606C8.94231 10.236 9.20012 9.85013 9.52513 9.52513C9.85013 9.20012 10.236 8.94231 10.6606 8.76642C11.0852 8.59053 11.5404 8.5 12 8.5C12.9283 8.5 13.8185 8.86875 14.4749 9.52513C15.1313 10.1815 15.5 11.0717 15.5 12C15.5 12.9283 15.1313 13.8185 14.4749 14.4749C13.8185 15.1313 12.9283 15.5 12 15.5ZM21.25 12.75C21.4489 12.75 21.6397 12.671 21.7803 12.5303C21.921 12.3897 22 12.1989 22 12C22 11.8011 21.921 11.6103 21.7803 11.4697C21.6397 11.329 21.4489 11.25 21.25 11.25H19.75C19.5511 11.25 19.3603 11.329 19.2197 11.4697C19.079 11.6103 19 11.8011 19 12C19 12.1989 19.079 12.3897 19.2197 12.5303C19.3603 12.671 19.5511 12.75 19.75 12.75H21.25ZM12 19C12.1989 19 12.3897 19.079 12.5303 19.2197C12.671 19.3603 12.75 19.5511 12.75 19.75V21.25C12.75 21.4489 12.671 21.6397 12.5303 21.7803C12.3897 21.921 12.1989 22 12 22C11.8011 22 11.6103 21.921 11.4697 21.7803C11.329 21.6397 11.25 21.4489 11.25 21.25V19.75C11.25 19.5511 11.329 19.3603 11.4697 19.2197C11.6103 19.079 11.8011 19 12 19ZM4.25 12.75C4.44891 12.75 4.63968 12.671 4.78033 12.5303C4.92098 12.3897 5 12.1989 5 12C5 11.8011 4.92098 11.6103 4.78033 11.4697C4.63968 11.329 4.44891 11.25 4.25 11.25H2.75C2.55109 11.25 2.36032 11.329 2.21967 11.4697C2.07902 11.6103 2 11.8011 2 12C2 12.1989 2.07902 12.3897 2.21967 12.5303C2.36032 12.671 2.55109 12.75 2.75 12.75H4.25ZM4.22 4.22C4.36063 4.07955 4.55125 4.00066 4.75 4.00066C4.94875 4.00066 5.13937 4.07955 5.28 4.22L6.78 5.72C6.91248 5.86217 6.9846 6.05022 6.98117 6.24452C6.97775 6.43882 6.89903 6.62421 6.76162 6.76162C6.62421 6.89903 6.43882 6.97775 6.24452 6.98117C6.05022 6.9846 5.86217 6.91248 5.72 6.78L4.22 5.28C4.07955 5.13937 4.00066 4.94875 4.00066 4.75C4.00066 4.55125 4.07955 4.36063 4.22 4.22ZM5.28 19.78C5.21134 19.8537 5.12854 19.9128 5.03654 19.9538C4.94454 19.9948 4.84523 20.0168 4.74452 20.0186C4.64382 20.0204 4.54379 20.0018 4.4504 19.9641C4.35701 19.9264 4.27218 19.8703 4.20096 19.799C4.12974 19.7278 4.0736 19.643 4.03588 19.5496C3.99816 19.4562 3.97963 19.3562 3.98141 19.2555C3.98319 19.1548 4.00523 19.0555 4.04622 18.9635C4.08721 18.8715 4.14631 18.7887 4.22 18.72L5.72 17.22C5.78866 17.1463 5.87146 17.0872 5.96346 17.0462C6.05546 17.0052 6.15477 16.9832 6.25548 16.9814C6.35618 16.9796 6.45621 16.9982 6.5496 17.0359C6.64299 17.0736 6.72782 17.1297 6.79904 17.201C6.87026 17.2722 6.9264 17.357 6.96412 17.4504C7.00184 17.5438 7.02037 17.6438 7.01859 17.7445C7.01681 17.8452 6.99477 17.9445 6.95378 18.0365C6.91279 18.1285 6.85369 18.2113 6.78 18.28L5.28 19.78ZM19.78 4.22C19.6394 4.07955 19.4488 4.00066 19.25 4.00066C19.0512 4.00066 18.8606 4.07955 18.72 4.22L17.22 5.72C17.0875 5.86217 17.0154 6.05022 17.0188 6.24452C17.0223 6.43882 17.101 6.62421 17.2384 6.76162C17.3758 6.89903 17.5612 6.97775 17.7555 6.98117C17.9498 6.9846 18.1378 6.91248 18.28 6.78L19.78 5.28C19.9205 5.13937 19.9993 4.94875 19.9993 4.75C19.9993 4.55125 19.9205 4.36063 19.78 4.22ZM18.72 19.78C18.7887 19.8537 18.8715 19.9128 18.9635 19.9538C19.0555 19.9948 19.1548 20.0168 19.2555 20.0186C19.3562 20.0204 19.4562 20.0018 19.5496 19.9641C19.643 19.9264 19.7278 19.8703 19.799 19.799C19.8703 19.7278 19.9264 19.643 19.9641 19.5496C20.0018 19.4562 20.0204 19.3562 20.0186 19.2555C20.0168 19.1548 19.9948 19.0555 19.9538 18.9635C19.9128 18.8715 19.8537 18.7887 19.78 18.72L18.28 17.22C18.2113 17.1463 18.1285 17.0872 18.0365 17.0462C17.9445 17.0052 17.8452 16.9832 17.7445 16.9814C17.6438 16.9796 17.5438 16.9982 17.4504 17.0359C17.357 17.0736 17.2722 17.1297 17.201 17.201C17.1297 17.2722 17.0736 17.357 17.0359 17.4504C16.9982 17.5438 16.9796 17.6438 16.9814 17.7445C16.9832 17.8452 17.0052 17.9445 17.0462 18.0365C17.0872 18.1285 17.1463 18.2113 17.22 18.28L18.72 19.78Z" fill="#D3A415" style="fill:#D3A415;fill:color(display-p3 0.8269 0.6422 0.0818);fill-opacity:1;"></path>
+                    </svg>
+                    <svg class="icon-moon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.026 17.001C17.264 21.785 11.147 23.424 6.363 20.662C5.07739 19.9203 3.97301 18.9016 3.13 17.68C3.06474 17.5854 3.02211 17.477 3.0054 17.3633C2.98869 17.2496 2.99835 17.1335 3.03363 17.0241C3.0689 16.9147 3.12885 16.8149 3.20885 16.7323C3.28885 16.6498 3.38675 16.5867 3.495 16.548C7.262 15.2 9.28 13.638 10.451 11.402C11.684 9.04902 12.002 6.47202 11.14 2.93902C11.1122 2.8253 11.1114 2.70666 11.1377 2.59259C11.164 2.47851 11.2166 2.37217 11.2913 2.28207C11.3661 2.19198 11.4608 2.12063 11.5681 2.07373C11.6754 2.02684 11.7921 2.0057 11.909 2.01202C13.4786 2.09646 15.0059 2.55119 16.366 3.33902C21.15 6.10102 22.789 12.218 20.026 17.001ZM11.779 12.098C10.527 14.487 8.467 16.198 4.961 17.597C5.57641 18.2999 6.30349 18.8966 7.113 19.363C9.06418 20.4649 11.3715 20.7519 13.5331 20.1617C15.6948 19.5714 17.536 18.1517 18.6565 16.2111C19.7769 14.2705 20.086 11.9661 19.5164 9.79889C18.9469 7.63169 17.5448 5.77696 15.615 4.63802C14.7511 4.13841 13.806 3.79483 12.823 3.62302C13.47 7.00702 13.053 9.66602 11.778 12.098" fill="currentColor"></path>
+                    </svg>
+                </button>
+<a class="btn btn-gray resume-floating-telegram" href="https://t.me/mrbobstir" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg width="24" height="24" viewBox="2 2 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="telegram-brand-gradient" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#2AABEE"/><stop offset="1" stop-color="#229ED9"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#telegram-brand-gradient)"/><path d="M16.636 7.65c.12-.049.393-.09.527.02.1.083.128.194.142.272.015.078.034.256.019.395-.16 1.585-.856 5.43-1.21 7.205-.15.75-.445 1.002-.73 1.027-.62.057-1.091-.41-1.691-.804-.94-.616-1.47-1-2.382-1.602-1.054-.695-.371-1.077.23-1.702.158-.164 2.895-2.653 2.948-2.878.007-.028.013-.133-.05-.188-.062-.055-.154-.036-.22-.021-.094.021-1.597 1.015-4.51 2.982-.427.293-.813.435-1.158.427-.382-.008-1.117-.216-1.664-.394-.67-.218-1.201-.333-1.155-.703.024-.193.29-.39.8-.592a930.97 930.97 0 0 1 5.88-2.534c2.799-1.164 3.38-1.366 3.76-1.523Z" fill="#FFFFFF"/></svg></a>
+
+                
+            <a class="btn btn-gray resume-floating-pdf" href="./downloads/anton-bobkov-cv.pdf?v=8e6aeba39ffb" rel="noopener" download="anton-bobkov-cv.pdf">
+                    <svg class="resume-floating-pdf-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.25 20.5C18.4489 20.5 18.6397 20.579 18.7803 20.7197C18.921 20.8603 19 21.0511 19 21.25C19 21.4489 18.921 21.6397 18.7803 21.7803C18.6397 21.921 18.4489 22 18.25 22L5.25 22.005C5.05109 22.005 4.86032 21.926 4.71967 21.7853C4.57902 21.6447 4.5 21.4539 4.5 21.255C4.5 21.0561 4.57902 20.8653 4.71967 20.7247C4.86032 20.584 5.05109 20.505 5.25 20.505L18.25 20.5ZM11.648 2.01398L11.75 2.00698C11.9312 2.00699 12.1063 2.07262 12.2429 2.19175C12.3795 2.31087 12.4684 2.47543 12.493 2.65498L12.5 2.75698L12.499 16.442L16.221 12.722C16.348 12.595 16.5163 12.5177 16.6955 12.5043C16.8746 12.4909 17.0525 12.5423 17.197 12.649L17.282 12.722C17.4089 12.8491 17.4859 13.0175 17.4991 13.1966C17.5123 13.3757 17.4608 13.5536 17.354 13.698L17.281 13.782L12.284 18.779C12.157 18.906 11.9887 18.9832 11.8095 18.9966C11.6304 19.01 11.4525 18.9587 11.308 18.852L11.223 18.779L6.22 13.783C6.08546 13.6493 6.00655 13.4697 5.99915 13.2802C5.99176 13.0907 6.05642 12.9054 6.18013 12.7617C6.30384 12.6179 6.47741 12.5264 6.6659 12.5055C6.85439 12.4846 7.0438 12.5358 7.196 12.649L7.28 12.721L10.999 16.435L11 2.75598C11 2.57474 11.0656 2.39964 11.1848 2.26305C11.3039 2.12646 11.4684 2.03863 11.648 2.01398Z" fill="currentColor"></path>
+                    </svg>
+                    <span class="resume-floating-pdf-text">PDF</span>
+                    <svg class="btn-spinner" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M10 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M10 14V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M4.22 4.22L6.34 6.34" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M13.66 13.66L15.78 15.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M2 10H6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M14 10H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M4.22 15.78L6.34 13.66" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M13.66 6.34L15.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                </a>
+            <button id="resumeCopyLinkButton" class="btn btn-gray resume-floating-link" type="button" aria-label="Скопировать ссылку">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.51984 10.409C6.6537 10.2749 6.83337 10.1964 7.02273 10.1893C7.2121 10.1823 7.39712 10.2471 7.5406 10.3709C7.68408 10.4947 7.77539 10.6682 7.79618 10.8565C7.81696 11.0449 7.76567 11.2341 7.65262 11.3862L7.5805 11.4697L5.98951 13.0606C5.34539 13.7043 4.97751 14.5737 4.96395 15.4842C4.9504 16.3947 5.29224 17.2747 5.9169 17.9373C6.54157 18.5999 7.39987 18.9929 8.30961 19.0329C9.21934 19.073 10.1089 18.7569 10.7893 18.1518L10.9393 18.0104L12.5302 16.4194C12.6641 16.2853 12.8438 16.2068 13.0331 16.1997C13.2225 16.1927 13.4075 16.2575 13.551 16.3813C13.6945 16.5051 13.7858 16.6786 13.8066 16.867C13.8274 17.0553 13.7761 17.2445 13.663 17.3966L13.5909 17.4801L11.9999 19.0711C11.0779 19.995 9.83105 20.5218 8.52583 20.5388C7.22062 20.5558 5.9605 20.0617 5.01471 19.162C4.06891 18.2624 3.51242 17.0286 3.46414 15.7241C3.41586 14.4197 3.87961 13.1481 4.75631 12.181L4.92885 12L6.51984 10.409ZM11.9999 4.92892C12.922 4.00496 14.1688 3.47821 15.474 3.46121C16.7792 3.44422 18.0393 3.93831 18.9851 4.83795C19.9309 5.73758 20.4874 6.97142 20.5357 8.27585C20.584 9.58028 20.1202 10.8519 19.2435 11.819L19.071 12L17.48 13.591C17.3461 13.7251 17.1665 13.8036 16.9771 13.8107C16.7877 13.8177 16.6027 13.7528 16.4592 13.6291C16.3157 13.5053 16.2244 13.3318 16.2037 13.1434C16.1829 12.9551 16.2342 12.7658 16.3472 12.6138L16.4193 12.5303L18.0103 10.9393C18.6544 10.2956 19.0223 9.42626 19.0359 8.51574C19.0494 7.60523 18.7076 6.72528 18.0829 6.0627C17.4583 5.40012 16.6 5.00708 15.6902 4.96703C14.7805 4.92697 13.891 5.24305 13.2105 5.84816L13.0606 5.98958L11.4696 7.58057C11.3357 7.7147 11.1561 7.79318 10.9667 7.80025C10.7773 7.80732 10.5923 7.74244 10.4488 7.61866C10.3053 7.49488 10.214 7.32138 10.1933 7.13302C10.1725 6.94467 10.2238 6.75543 10.3368 6.60335L10.4089 6.51991L11.9999 4.92892ZM7.93405 15.0052L15.0051 7.93412C15.1395 7.7998 15.3199 7.7215 15.5098 7.71505C15.6997 7.7086 15.885 7.77448 16.0282 7.89937C16.1715 8.02427 16.2619 8.19887 16.2814 8.3879C16.3008 8.57692 16.2478 8.76628 16.133 8.91771L16.0658 8.99478L8.99471 16.0659C8.8603 16.2002 8.67992 16.2785 8.49 16.2849C8.30009 16.2914 8.11481 16.2255 7.97159 16.1006C7.82838 15.9757 7.73792 15.8011 7.71848 15.6121C7.69904 15.4231 7.75208 15.2337 7.86688 15.0823L7.93405 15.0052Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+                
+                </div>
+        </div>
+        
+    </div>
+
+    
+
+    <script type="application/json" id="resume-config-json">
+        {"id": 13763, "isPublished": true, "isShare": false, "isTemp": false, "publishedLang": "ru", "shareToken": "", "slug": "94kqWM8j4c", "tempSourceResumeId": "", "tempToken": ""}
+    </script>
+    
+    <script>window.ResumeConfig = window.ResumeConfig || {}; Object.assign(window.ResumeConfig, JSON.parse(document.getElementById('resume-config-json').textContent));</script><script src="./static/js/toast.js" defer></script>
+    <script src="./static/js/utils/escapeHtml.js" defer></script>
+    <script src="./static/js/resume_public_dates.js?v=project-ranges-2" defer></script>
+    <script src="./static/js/resume_public_lang.js" defer></script>
+    <script src="./static/js/resume_public_translate.js" defer></script>
+    <script src="./static/js/resume_public_achievements.js" defer></script>
+    <script src="./static/js/resume_public_prepositions.js" defer></script>
+    
+    <script src="./static/js/theme-switcher.js" defer></script>
+
+<noscript>
+    <div></div>
+</noscript>
+
+<script src="./static/js/offline.js" defer></script></body>
+</html>
+
+
+
+
+
+
