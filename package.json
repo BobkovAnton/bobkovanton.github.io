@@ -1,0 +1,16 @@
+{
+  "name": "anton-bobkov-cv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Автономная копия публичного CV Антона Бобкова",
+  "scripts": {
+    "dev": "node server.cjs",
+    "start": "node server.cjs",
+    "build:pdf": "python3 scripts/build-pdf.py"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "153.0.0",
+    "jsdom": "27.0.1",
+    "puppeteer-core": "25.14.0"
+  }
+}

@@ -1,0 +1,53 @@
+name: Refresh downloadable CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh-cv-pdf
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.event_name == 'workflow_dispatch' || github.event.head_commit.message != 'Current CV website'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnss3 libatk-bridge2.0-0 libgbm1 libasound2t64 fonts-dejavu-core
+          npm ci --ignore-scripts
+          python -m pip install -r scripts/requirements-pdf.txt
+      - name: Build and validate current CV
+        run: npm run build:pdf
+      - name: Publish updated PDF and request Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add downloads/anton-bobkov-cv.pdf index.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh downloadable CV from current website'
+            git push origin HEAD:main
+          fi
+          python3 scripts/compact-history.py
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
