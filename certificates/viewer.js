@@ -6,19 +6,19 @@
   const output = document.querySelector('#zoom-value');
   const plus = document.querySelector('#zoom-in');
   const minus = document.querySelector('#zoom-out');
-  const theme = document.querySelector('#theme');
   let scale = 1;
   let fitted = true;
   let fittedScale = 1;
 
   function applyTheme(value) {
-    document.documentElement.dataset.theme = value;
-    document.querySelector('meta[name="theme-color"]').content = value === 'dark' ? '#151515' : '#f3f3f3';
-    theme.setAttribute('aria-label', value === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему');
-    try { localStorage.setItem('certificate-theme', value); } catch {}
+    const resolved = value === 'light' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = resolved;
+    document.querySelector('meta[name="theme-color"]').content = resolved === 'dark' ? '#151515' : '#f3f3f3';
   }
-  try { applyTheme(localStorage.getItem('certificate-theme') || localStorage.getItem('theme') || 'dark'); } catch { applyTheme('dark'); }
-  theme.addEventListener('click', () => applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
+  try { applyTheme(localStorage.getItem('theme')); } catch { applyTheme('dark'); }
+  window.addEventListener('storage', event => {
+    if (event.key === 'theme' || event.key === null) applyTheme(event.newValue);
+  });
 
   function calculateFit() {
     const padding = Number.parseFloat(getComputedStyle(canvas).paddingLeft) * 2;
