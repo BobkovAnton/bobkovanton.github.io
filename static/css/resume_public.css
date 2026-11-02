@@ -839,14 +839,13 @@ html.dark-theme .resume-floating-link.theme-toggle .icon-moon {
 html.dark-theme .resume-link-logo-dprofile { filter: contrast(10); mix-blend-mode: screen; }
 
 
-/* Tool links reuse the skill chip surface and 12px radius. */
+/* Tool icons reuse the skill chip surface and 12px radius. */
 .resume-tools-grid { gap: var(--resume-space-1); }
-.resume-public-skill-chip.resume-tool-link {
+.resume-public-skill-chip.resume-tool-icon {
   width: 44px; height: 44px; flex: 0 0 44px;
-  padding: 0; justify-content: center; text-decoration: none; cursor: pointer;
+  padding: 0; justify-content: center; cursor: default;
 }
 .resume-tool-logo { display: block; flex: none; pointer-events: none; }
-.resume-tool-link:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 
 
 /* Course certificates share one understated text-link style. */

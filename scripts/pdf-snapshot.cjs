@@ -50,7 +50,7 @@ async function main() {
   process.stdout.write(JSON.stringify({
     html: '<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Anton Bobkov — Product Designer | CV</title><style>' + typography + '</style></head><body>' + main.outerHTML + '</body></html>',
     headings: [...main.querySelectorAll('.resume-public-section-title, .resume-public-list-title')].map(el => el.textContent.trim()),
-    blocks: [...main.querySelectorAll('.resume-public-about, .resume-public-list-description:not(.resume-public-work-description), .resume-public-work-intro, .resume-public-work-points li, .resume-public-language-line, .resume-public-skill-chip:not(.resume-tool-link), .resume-public-certificate-link')].map(el => el.textContent.trim()).filter(Boolean),
+    blocks: [...main.querySelectorAll('.resume-public-about, .resume-public-list-description:not(.resume-public-work-description), .resume-public-work-intro, .resume-public-work-points li, .resume-public-language-line, .resume-public-skill-chip:not(.resume-tool-icon), .resume-public-certificate-link')].map(el => el.textContent.trim()).filter(Boolean),
     links: [...new Set([...main.querySelectorAll('a[href]')].map(el => el.getAttribute('href')))],
     text: main.textContent,
   }));

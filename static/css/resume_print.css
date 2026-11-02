@@ -68,7 +68,7 @@ p { margin: 0; }
 .resume-public-skill-chip { display: inline-block; background: #f5f5f5; border-radius: 12px; padding: 6px 10px; margin: 0 4px 4px 0; white-space: nowrap; }
 .resume-public-language-line + .resume-public-language-line { margin-top: 8px; }
 .resume-public-language-level { color: #777; margin-left: 4px; }
-.resume-public-skill-chip.resume-tool-link { width: 36px; height: 36px; padding: 6px; text-decoration: none; vertical-align: top; }
+.resume-public-skill-chip.resume-tool-icon { width: 36px; height: 36px; padding: 6px; text-decoration: none; vertical-align: top; }
 .resume-tool-logo { display: block; max-width: 24px; max-height: 24px; margin: 0 auto; }
 .resume-public-floating-wrapper { display: none; }
 
