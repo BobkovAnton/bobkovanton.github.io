@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" aria-hidden="true">
+  <defs>
+    <linearGradient id="hairikFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#146546"/>
+      <stop offset="0.55" stop-color="#3F9778"/>
+      <stop offset="1" stop-color="#4DB288"/>
+    </linearGradient>
+    <clipPath id="hairikStage"><circle cx="40" cy="40" r="40"/></clipPath>
+    <style>
+      .peek, .eyes, .blink { transform-box: fill-box; transform-origin: center; }
+      .peek { animation: peek 6s ease-in-out infinite; }
+      .eyes { animation: look 6s ease-in-out infinite; }
+      .blink { animation: blink-eyes 6s ease-in-out infinite; }
+      @keyframes peek { 0%, 100% { transform: translateY(6px); } 50% { transform: translateY(0); } }
+      @keyframes look { 0%, 30% { transform: translate(-3px, 0); } 40%, 70% { transform: translate(3px, -2px); } 80%, 100% { transform: translate(-3px, 0); } }
+      @keyframes blink-eyes { 0%, 54%, 60%, 100% { transform: scaleY(1); } 57% { transform: scaleY(0.1); } }
+      @media (prefers-reduced-motion: reduce) { .peek, .eyes, .blink { animation: none; } }
+    </style>
+  </defs>
+  <circle cx="40" cy="40" r="40" fill="#DCEFE5"/>
+  <g clip-path="url(#hairikStage)">
+    <g transform="translate(11.5 27.5) scale(0.78)"><g class="peek">
+      <path d="M20.5869 0.00411049C23.3503 -0.0396804 25.7094 0.256237 28.2457 1.38363C32.1694 3.1277 35.5292 6.14032 37.3583 10.0481C37.7464 10.8775 38.1015 11.8748 38.4312 12.7444C38.8651 12.0866 39.1973 11.3643 39.6376 10.711C43.6615 4.74082 49.6662 2.07339 56.7839 2.67792C61.4403 3.07759 65.7515 5.29414 68.7845 8.84745C70.7076 11.1363 71.9543 13.6259 72.5815 16.5608C73.3802 20.3027 72.8398 23.8201 72.5627 27.596L71.6119 39.4506C71.2417 43.9902 71.0632 48.534 70.6611 53.0783L70.6 70H2L0 53.0966C0.161214 50.1986 0.448582 47.2423 0.632382 44.3412C0.688493 43.4555 0.852089 42.4908 0.931738 41.5875L1.91007 29.5066C2.30764 24.3813 2.47585 18.3161 3.42514 13.3537C4.44811 8.00598 9.66429 2.6367 14.76 0.955921C16.8061 0.281013 18.4104 0.0814907 20.5869 0.00411049Z" fill="url(#hairikFill)"/>
+      <g class="eyes"><g class="blink">
+        <circle cx="49.5" cy="47.5" r="7.7" fill="#0F3D2B"/>
+        <circle cx="15.5" cy="47.5" r="7.7" fill="#0F3D2B"/>
+        <circle cx="52" cy="44.8" r="2.2" fill="#fff"/>
+        <circle cx="18" cy="44.8" r="2.2" fill="#fff"/>
+      </g></g>
+    </g></g>
+  </g>
+</svg>
